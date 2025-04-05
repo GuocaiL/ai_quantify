@@ -70,5 +70,5 @@ python main.py --mode trade --ticker 002031 --initial_capital 100000
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 联系
-- **作者**：李国才
-- **邮箱**：liguocai@example.com
+- **作者** GuocaiL
+- **邮箱**：842855183@qq.com
