@@ -1,0 +1,62 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdk/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 编辑器/IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 环境文件
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 数据文件
+*.csv
+*.pkl
+*.h5
+*.feather
+*.parquet
+*.db
+*.sqlite
+
+# 日志文件
+*.log
+*.log.*
+logs/
+
+# 回测结果
+backtest_results/
+results/
+output/
+
+# 系统文件
+.DS_Store
+Thumbs.db
