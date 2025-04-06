@@ -7,7 +7,7 @@ class BacktestEngine:
         self.cerebro.broker.setcash(cash)
         self.cerebro.broker.setcommission(commission=commission)
 
-    def add_data(self, df, fromdate, todate):
+    def add_data(self, df):
         """添加回测数据
         
         Args:
@@ -18,7 +18,7 @@ class BacktestEngine:
         Returns:
             self: 返回实例本身以支持链式调用
         """
-        data = bt.feeds.PandasData(dataname=df, fromdate=fromdate, todate=todate)
+        data = bt.feeds.PandasData(dataname=df)
         self.cerebro.adddata(data)
         return self
 
@@ -29,7 +29,7 @@ class BacktestEngine:
     def add_analyzers(self):
         self.cerebro.addanalyzer(bt.analyzers.Returns, _name='returns')
         self.cerebro.addanalyzer(bt.analyzers.SharpeRatio, _name='sharpe', riskfreerate=0.0)
-        self.cerebro.addanalyzer(bt.analyzers.TimeDrawDown, _name='drawdown')
+        self.cerebro.addanalyzer(bt.analyzers.DrawDown, _name='drawdown')  # 最大回撤
         self.cerebro.addanalyzer(bt.analyzers.TradeAnalyzer, _name='trades')
         self.cerebro.addanalyzer(bt.analyzers.SQN, _name='sqn')
         return self

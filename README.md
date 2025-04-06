@@ -16,6 +16,7 @@ ai_quantify/
 ├── main.py                 # 主程序入口
 ├── visualization/
 │   └── plotter.py          # 可视化模块
+├── selector.py             # 选股模块
 └── README.md               # 项目说明文档
 ```
 
